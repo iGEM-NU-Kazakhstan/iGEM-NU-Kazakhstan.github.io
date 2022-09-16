@@ -164,29 +164,37 @@ nav ul li a{
     transform: translate(-50%,-50%);
 }
 
-
 .popup-info{
     position: relative;
     float:right;
-    max-width: 20%;
+    width: 20%;
     top: 4%;
     right: 4%;
 }
 
+.work-name{
+    font-size: min(4vw, 50px);
+}
+
+.work-author{
+    font-size: min(3vw, 30px)
+}
+
 .info-table{
-    border: 1px solid black;
     position: relative;
+    display: grid;
 }
 
 .info-row{
     position: relative;
-    max-width: 100%;
+    width: 100%;
 }
 
 .info-col{
-    max-width: 50%;
+    width: 50%;
     padding: 2px 0 2px;
     margin-top: 5px;
+    font-size: min(16px, 2vw);
 }   
 
 .info-col-left{
@@ -199,15 +207,15 @@ nav ul li a{
 
 .price-input{
     float: left;
-    width: 23%;
-    margin-top: 20px;
+    width: 28%;
+    margin-top: 10px;
     border-radius: 6px;
 }
 
 .email-input{
     float: right;
     width: 70%;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 6px;
 }
 

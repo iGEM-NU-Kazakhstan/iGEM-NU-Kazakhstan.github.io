@@ -174,28 +174,31 @@
             <img src="images/image12.jpg" alt="">
         </div>
         <div class="popup-info">
-            <h1 class="work_name">Football</h1>
-            <h2 class="work_author">Author</h2>
+            <h1 class="work-name">Football</h1>
+            <h2 class="work-author">Author</h2>
             <div class="info-table">
-                <div class="info-row">
-                    <div class="info-col info-col-left">Materials</div>
-                    <div class="info-col info-col-right">Blood</div>
+                <div class="info-rows">
+                    <div class="info-row">
+                        <div class="info-col info-col-left">Materials</div>
+                        <div class="info-col info-col-right">Blood</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-col info-col-left">Size</div>
+                        <div class="info-col info-col-right">110x100cm</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-col info-col-left">Highest price</div>
+                        <div class="info-col info-col-right">$500</div>
+                    </div>
                 </div>
-                <div class="info-row">
-                    <div class="info-col info-col-left">Size</div>
-                    <div class="info-col info-col-right">110x100cm</div>
+                
+                <div class="popup-form">
+                    <form onsubmit="event.preventDefault(); sendBot('12')">
+                        <input type="text" id="price_image12" class="price-input" placeholder="Price" autofocus autocomplete="off">
+                        <input type="email" name="" id="email_for_image12" class="email-input" placeholder="Email" autocomplete="off">
+                        <input type="submit" value="Buy" class="popup-submit-button">
+                    </form> 
                 </div>
-                <div class="info-row">
-                    <div class="info-col info-col-left">Highest price</div>
-                    <div class="info-col info-col-right">$500</div>
-                </div>
-            </div>
-            <div  class="popup-form">
-                <form onsubmit="event.preventDefault(); sendBot('12')">
-                    <input type="text" id="price_image12" class="price-input" placeholder="Price" autofocus autocomplete="off">
-                    <input type="email" name="" id="email_for_image12" class="email-input" placeholder="Email" autocomplete="off">
-                    <input type="submit" value="Buy" class="popup-submit-button">
-                </form> 
             </div>
         </div>
 
