@@ -23,12 +23,12 @@ body{
     gap: var(--size-3);
 }
 
-.header > .title {
-    font-size: var(--font-size-fluid-3);
+.title-container > .title {
+    font-size: var(--font-size-fluid-2);
 }
 
-.header > .description{
-    font-size: --font-size-fluid-1;
+.title-container > .description{
+    font-size: var(--font-size-fluid-1);
 }
 
 .logo{
@@ -71,8 +71,6 @@ nav ul li{
 nav ul li a{
     color: green;
 }
-
-
 
 /*---------blocks--------*/
 
