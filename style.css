@@ -87,7 +87,7 @@ nav ul li a{
     padding: var(--spacer);
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 30%;
+    grid-auto-columns: 21%;
     gap: var(--spacer);
     background: var(--gradient-14);
 
@@ -96,7 +96,7 @@ nav ul li a{
 }
 
 .block-scroll--with-groups{
-    grid-auto-columns: 120%;
+    grid-auto-columns: 80%;
 }
 
 .block-group{
@@ -113,8 +113,7 @@ nav ul li a{
 }
 
 .block-artwork > *{
-    width: 100%;
-    aspect-ratio: 4/3;
+    max-width: 100%;
 }
 
 .block-snap{
@@ -203,23 +202,25 @@ nav ul li a{
     float: right;
 }
 
+.popup-form{
+    position: relative;
+}
+
 .price-input{
     float: left;
     width: 28%;
-    margin-top: 10px;
     border-radius: 6px;
 }
 
 .email-input{
     float: right;
-    width: 70%;
-    margin-top: 10px;
+    width: min(11vw, 70%);
     border-radius: 6px;
 }
 
 .popup-submit-button{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 30px;
     padding: 10px 30px;
     background: #0e8261;  
@@ -246,6 +247,81 @@ nav ul li a{
 .popup-close-button:hover{
     color: black;  
     opacity: 70%;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* changes when opened in phone */
+
+@media screen and (max-width: 480px){
+    .popup{
+        top: 5%;
+        bottom: 5%;
+    }
+
+    .popup-image{
+        float:none;
+        width: 100%;
+        height: 67%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 6px;
+    }
+
+    .popup-info{
+        float: none;
+        width: 80%;
+        height: 33%;
+        left: 10%;
+        right: 10%;
+        top: 2%;
+        bottom: 2%;
+    }
+
+    .work-name{
+        font-size: 22px;
+    }
+
+    .work-author{
+        font-size: 18px;
+    }
+
+    .hr1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hr2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .info-col{
+        font-size: 14px;
+        padding: 1px 0;
+    }
+
+    .email-input{
+        width: 70%;
+        padding: 1px;
+        margin-top: 5px;
+    }
+
+    .price-input{
+        padding: 1px;
+        margin-top: 5px;
+    }
+
+    .popup-submit-button{
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .popup-close-button{
+        background-color: black;
+    }
 }
 
 /* class added to show popup */
