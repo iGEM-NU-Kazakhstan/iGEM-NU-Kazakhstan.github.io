@@ -263,7 +263,7 @@ hr{
     .block-scroll{
         --spacer: 3vw;
     }
-    /* popup (4.5px - 1vw)*/
+    /* popup (8.8px - 1vw)*/
     .popup{
         top: 5%;
         bottom: 5%;
@@ -285,40 +285,42 @@ hr{
         right: 10%;
         top: 2%;
         bottom: 2%;
+
+        --space1: 0.114vh; /*1px*/
     }
 
     .work-name{
-        font-size: 5vw;
+        font-size: calc(var(--space1)*22)
     }
 
     .work-author{
-        font-size: 4vw;
+        font-size: calc(var(--space1)*18);
     }
 
     hr{
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin-top: calc(var(--space1)*5);
+        margin-bottom: calc(var(--space1)*5);
     }
 
     .info-col{
-        font-size: 3.2vw;
-        padding: 0.2vw 0;
+        font-size: calc(var(--space1)*14);
+        padding: calc(var(--space1)) 0;
     }
 
     .email-input{
         width: 70%;
-        padding: 0.2vw;
-        margin-top: 1vw;
+        padding: calc(var(--space1)*5);
+        margin-top: calc(var(--space1));
     }
 
     .price-input{
-        padding: 0.2vw;
-        margin-top: 1vw;
+        padding: calc(var(--space1)*5);
+        margin-top: calc(var(--space1));
     }
 
     .popup-submit-button{
-        margin-top: 2vw;
-        padding: 1vw;
+        margin-top: calc(var(--space1)*10);
+        padding: calc(var(--space1)*5);
     }
 
     .popup-close-button{
