@@ -261,9 +261,9 @@ hr{
     /* main page */
 
     .block-scroll{
-        --spacer: 15px;
+        --spacer: 3vw;
     }
-    /* popup */
+    /* popup (4.5px - 1vw)*/
     .popup{
         top: 5%;
         bottom: 5%;
@@ -288,42 +288,37 @@ hr{
     }
 
     .work-name{
-        font-size: 22px;
+        font-size: 5vw;
     }
 
     .work-author{
-        font-size: 18px;
+        font-size: 4vw;
     }
 
-    .hr1{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .hr2{
-        margin-top: 5px;
-        margin-bottom: 5px;
+    hr{
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
 
     .info-col{
-        font-size: 14px;
-        padding: 1px 0;
+        font-size: 3.2vw;
+        padding: 0.2vw 0;
     }
 
     .email-input{
         width: 70%;
-        padding: 1px;
-        margin-top: 5px;
+        padding: 0.2vw;
+        margin-top: 1vw;
     }
 
     .price-input{
-        padding: 1px;
-        margin-top: 5px;
+        padding: 0.2vw;
+        margin-top: 1vw;
     }
 
     .popup-submit-button{
-        margin-top: 10px;
-        padding: 5px;
+        margin-top: 2vw;
+        padding: 1vw;
     }
 
     .popup-close-button{
@@ -337,6 +332,8 @@ hr{
     background: rgba(0, 0, 0, 0.1);
     filter: blur(8px);
     pointer-events: none;
+
+    position: fixed;
 }
 
 /* video artworks */
