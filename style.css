@@ -83,13 +83,14 @@ nav ul li a{
 }
 
 .block-scroll{
-    --spacer: 2rem;
+    --spacer: 26px;
     padding: var(--spacer);
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 21%;
     gap: var(--spacer);
     background: var(--gradient-14);
+    border-radius: 10px;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -113,7 +114,7 @@ nav ul li a{
 }
 
 .block-artwork > *{
-    max-width: 100%;
+   max-width: 100%;
 }
 
 .block-snap{
@@ -257,6 +258,12 @@ hr{
 /* changes when opened in phone */
 
 @media screen and (max-width: 480px){
+    /* main page */
+
+    .block-scroll{
+        --spacer: 15px;
+    }
+    /* popup */
     .popup{
         top: 5%;
         bottom: 5%;
@@ -269,7 +276,7 @@ hr{
         border-bottom-left-radius: 0px;
         border-top-right-radius: 6px;
     }
-
+    
     .popup-info{
         float: none;
         width: 80%;
