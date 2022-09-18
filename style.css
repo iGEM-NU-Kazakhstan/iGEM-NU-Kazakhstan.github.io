@@ -309,12 +309,12 @@ hr{
 
     .email-input{
         width: 70%;
-        padding: calc(var(--space1)*5);
+        padding: calc(var(--space1));
         margin-top: calc(var(--space1));
     }
 
     .price-input{
-        padding: calc(var(--space1)*5);
+        padding: calc(var(--space1));
         margin-top: calc(var(--space1));
     }
 
